@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-black font-mono selection:bg-accent-green selection:text-black;
+  }
+  
+  /* Brutal Markdown defaults */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold mb-4 font-mono;
+  }
+  
+  p {
+    @apply mb-4 leading-relaxed;
+  }
+  
+  a {
+    @apply hover:underline decoration-2 decoration-accent-green hover:text-accent-green transition-colors duration-200;
+  }
+
+  /* Make focus visible and brutal */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-accent-red ring-offset-2;
+  }
+}
