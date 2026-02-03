@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 
 const projects = [
     {
-        title: "Project Alpha",
-        shortDesc: "A high-frequency trading bot.",
-        details: "Built with Python and C++. Features low-latency execution and advanced risk management."
+        title: "Currently emplyed at Ntt Data Italia",
+        shortDesc: "Software Engineer & Consultant.",
+        details: "brief description of my job"
     },
     {
         title: "Project Beta",
@@ -14,8 +14,8 @@ const projects = [
     {
         title: "Portfolio",
         shortDesc: "This website.",
-        details: "React + Vite + Tailwind CSS. Designed to look like a raw markdown file."
-    }
+        details: "React + Vite + Tailwind CSS."
+    },
 ];
 
 const WorkProjects = () => {
@@ -28,7 +28,7 @@ const WorkProjects = () => {
     return (
         <section className="animate-in fade-in duration-700">
             <h2 className="text-2xl font-bold mb-6 flex items-center">
-                <span className="text-accent-red mr-2">##</span>
+                <span className="text-accent-primary mr-2">##</span>
                 Work & Projects
             </h2>
             <div className="space-y-4">
@@ -40,7 +40,7 @@ const WorkProjects = () => {
                     >
                         <div className="flex justify-between items-center select-none">
                             <h3 className="font-bold text-lg font-mono flex items-center">
-                                <span className={`${openIndex === idx ? 'text-accent-green' : 'text-accent-red'} mr-3`}>###</span>
+                                <span className={`${openIndex === idx ? 'text-accent-secondary' : 'text-accent-primary'} mr-3`}>###</span>
                                 {project.title}
                             </h3>
                             <span className="font-mono text-xl">{openIndex === idx ? '[-]' : '[+]'}</span>
@@ -51,7 +51,7 @@ const WorkProjects = () => {
 
                         {openIndex === idx && (
                             <div className="mt-4 pt-4 border-t border-gray-600 animate-in fade-in slide-in-from-top-1 duration-200">
-                                <p className="font-mono text-sm text-accent-green mb-1">&gt; details</p>
+                                <p className="font-mono text-sm text-accent-secondary mb-1">&gt; details</p>
                                 <p className="font-mono text-sm">{project.details}</p>
                             </div>
                         )}

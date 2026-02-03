@@ -37,7 +37,7 @@ const Layout = () => {
                 <Outlet />
             </main>
             <footer className="mt-24 pt-8 border-t-2 border-black text-sm text-gray-600 font-mono">
-                <p>&gt; © {new Date().getFullYear()} Francesco De Fulgentiis. END_OF_FILE</p>
+                <p>&gt; © {new Date().getFullYear()} Francesco Defulgentiis.</p>
             </footer>
         </div>
     );

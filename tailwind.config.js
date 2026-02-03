@@ -8,17 +8,19 @@ export default {
     extend: {
       colors: {
         accent: {
-          red: '#ff6b6b',   // Pastel Red
-          green: '#51cf66', // Pastel Green
+          primary: '#8bc34a',
+          secondary: '#8348c1',
         },
       },
       fontFamily: {
         mono: ['"Space Mono"', 'monospace'],
       },
       borderWidth: {
-        DEFAULT: '2px', // Make default border thick
+        DEFAULT: '2px',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
