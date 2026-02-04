@@ -1,0 +1,30 @@
+# AI Coding Guidelines
+- **Purpose**: Portfolio and blog built with React + Vite, served statically on GitHub Pages; keep the brutalist, text-first aesthetic intact.
+- **Entry Point**: Routing is consolidated in [src/App.jsx](../src/App.jsx); all new pages should be nested within the `Layout` route so header/footer stay consistent.
+- **Shell Layout**: [src/components/layout/Layout.jsx](../src/components/layout/Layout.jsx) manages navigation and highlights the active path; match its minimal copy-heavy tone when adding links or sections.
+- **Home Composition**: [src/pages/Home.jsx](../src/pages/Home.jsx) stitches together section components; follow its `space-y` rhythm and keep hero typography aligned with the accent color tokens.
+- **Sections Pattern**: Components in [src/components/sections](../src/components/sections) expose data inline (arrays or JSX). Extend these with small, declarative props instead of introducing global state.
+- **Project Accordions**: [WorkProjects](../src/components/sections/WorkProjects.jsx) uses a local `openIndex` toggle; reuse that pattern (state + index compare) if adding expandable lists.
+- **Blog Data Source**: [src/lib/posts.js](../src/lib/posts.js) loads front-matter markdown via `import.meta.glob`; every post needs `title`, `date`, `description`, and `toRead` fields to avoid runtime undefineds.
+- **Post Ordering**: `getPosts` sorts by descending `date`; use ISO `YYYY-MM-DD` strings so JavaScript `Date` comparisons remain reliable.
+- **Latest Feed**: [LatestPosts](../src/components/sections/LatestPosts.jsx) slices the first two entries; if you change the slice length, mirror the layout grid breakpoints.
+- **Blog Index**: [src/pages/Blog.jsx](../src/pages/Blog.jsx) trusts `getPosts` to resolve asynchronously; keep fetch logic inside `useEffect` hooks and guard against empty arrays when adding filters.
+- **Single Post View**: [src/pages/BlogPost.jsx](../src/pages/BlogPost.jsx) wraps content in `react-markdown` with Tailwind Typography classes stored in `MARKDOWN_STYLES`; extend that map instead of inlining new prose overrides.
+- **Missing Post UX**: BlogPost surfaces a minimal 404; reuse the `<Link to="/blog">` pattern when adding additional fallbacks.
+- **Markdown Authoring**: Posts live in [src/posts](../src/posts); place draft assets there and let front-matter control metadata—no manual slug list is needed because slug derives from the filename.
+- **Newsletter Embed**: [Newsletter.jsx](../src/components/blog/Newsletter.jsx) posts to Buttondown; if changing providers, keep the `target="popupwindow"` behaviour or update the click handling accordingly.
+- **Styling System**: Tailwind config at [tailwind.config.js](../tailwind.config.js) defines `accent.primary` and `accent.secondary` plus the `Space Mono` font; reference those tokens in new components instead of hard-coding colors or fonts.
+- **Global CSS**: [src/index.css](../src/index.css) applies brutalist base styles and focus rings; prefer Tailwind utilities, but add cross-cutting typography tweaks here.
+- **Animations**: Classes like `animate-in fade-in` come from Tailwind + unused community presets; keep transitions subtle and text-focused.
+- **Icons**: `lucide-react` is installed but unused; if you introduce icons, import individually to keep bundle size down.
+- **State Management**: Current stateful components use local `useState`; avoid introducing context or external stores unless multiple sections share logic.
+- **Routing Quirks**: BrowserRouter assumes GitHub Pages root deploy with `base: '/'` in [vite.config.js](../vite.config.js); adjust `base` only if the site moves off the apex domain.
+- **Build & Dev**: `npm install`, `npm run dev` for local preview; `npm run build` generates static assets in `dist`, and `npm run preview` mimics production locally.
+- **Linting**: `npm run lint` invokes the Vite + React ESLint preset; fix warnings immediately because deploys rely on clean CI checks.
+- **File Naming**: JSX components stay PascalCase, markdown slugs use kebab-case to align with `getPost` path construction.
+- **Testing**: No formal test suite; validate pages manually by hitting `/`, `/blog`, and `/blog/:slug` after major changes.
+- **Content Tone**: Copy leans playful and terminal-themed (`>`, `[]`, `###`); preserve that voice when adding text blocks.
+- **Accessibility**: Focus states already emphasized; ensure new interactive elements expose keyboard handlers and avoid removing outlines.
+- **Dependencies**: React 19 features (e.g., hooks inside components) are supported; no legacy class components exist—stay within functional patterns.
+- **Assets**: Keep the `public` folder lean; prefer markdown-embedded code fences over image-heavy posts to maintain load speed.
+- **Deployment**: Publishing relies on GitHub Pages serving the `dist` artifacts; any new asset path should be relative so static hosting resolves correctly.
