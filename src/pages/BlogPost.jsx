@@ -3,6 +3,15 @@ import { useParams, Link } from 'react-router-dom';
 import Markdown from 'react-markdown';
 import { getPost } from '../lib/posts';
 
+const MARKDOWN_STYLES = {
+    base: "prose prose-p:font-mono",
+    headings: "prose-headings:font-bold prose-headings:font-mono",
+    links: "prose-a:text-accent-primary prose-a:no-underline hover:prose-a:underline",
+    lists: "prose-ul:list-disc prose-li:marker:text-accent-primary",
+    code: "prose-code:text-accent-secondary prose-code:bg-gray-100 prose-code:px-1 prose-code:py-0.5 prose-code:rounded-none",
+    pre: "prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:rounded-none prose-pre:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] prose-pre:border-2 prose-pre:border-black"
+};
+
 const BlogPost = () => {
     const { slug } = useParams();
     const [post, setPost] = useState(null);
@@ -46,11 +55,11 @@ const BlogPost = () => {
                 </h1>
                 <div className="text-gray-500 font-mono text-sm flex gap-4">
                     <span>DATE: {post.data.date}</span>
-                    <span className="text-accent-primary">--READ_MODE</span>
+                    <span className="text-accent-primary">--{post.data.toRead} min read</span>
                 </div>
             </header>
 
-            <div className="prose prose-p:font-mono prose-headings:font-bold prose-headings:font-mono prose-a:text-accent-primary prose-a:no-underline hover:prose-a:underline prose-code:text-accent-secondary prose-code:bg-gray-100 prose-code:px-1 prose-code:py-0.5 prose-code:rounded-none prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:rounded-none prose-pre:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] prose-pre:border-2 prose-pre:border-black">
+            <div className={Object.values(MARKDOWN_STYLES).join(' ')}>
                 <Markdown>
                     {post.content}
                 </Markdown>

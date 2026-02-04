@@ -7,17 +7,17 @@ const Newsletter = () => {
     return (
         <section className="mt-16 pt-8 border-t border-dashed border-gray-400">
             <h3 className="text-xl font-bold mb-4 flex items-center">
-                <span className="text-accent-secondary mr-2 text-sm">&lt;Subscribe /&gt;</span>
+                <span className="text-accent-secondary mr-2 text-sm">&lt;My newsletter /&gt;</span>
             </h3>
             <p className="mb-6 text-sm text-gray-600 font-mono">
                 Get notified when I post something new. No spam, just updates.
             </p>
 
             <form
-                action={`https://buttondown.email/api/emails/embed-subscribe/${username}`}
+                action="https://buttondown.com/api/emails/embed-subscribe/pepe_aster"
                 method="post"
-                target="popupwindow"
-                onSubmit={() => window.open(`https://buttondown.email/${username}`, 'popupwindow')}
+                class="embeddable-buttondown-form"
+                referrerpolicy="unsafe-url"
                 className="flex flex-col sm:flex-row gap-4 max-w-md"
             >
                 <input
@@ -36,9 +36,6 @@ const Newsletter = () => {
                 </button>
             </form>
 
-            <p className="mt-2 text-xs text-gray-400 font-mono">
-                Powered by <a href="https://buttondown.email" target="_blank" rel="noreferrer" className="underline hover:text-accent-primary">Buttondown</a>.
-            </p>
         </section>
     );
 };

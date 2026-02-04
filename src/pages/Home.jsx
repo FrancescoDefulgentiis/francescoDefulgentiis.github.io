@@ -12,13 +12,14 @@ const Home = () => {
                     Francesco Defulgentiis
                 </h1>
                 <p className="text-xl md:text-2xl font-mono border-l-4 border-accent-secondary pl-4 py-1 italic">
-                    Software Engineer. curious. Builder.
+                    Software Engineer. Curious. Builder.
                 </p>
             </section>
 
-            <Education />
+            {/* <LatestPosts /> */}
             <WorkProjects />
-            <Certifications />
+            <Education />
+            {/* <Certifications /> */}
 
             <section className="animate-in fade-in duration-1000 delay-300 border-t-2 border-black pt-8">
                 <p className="font-mono text-gray-600 mb-4">&gt; Want to see more?</p>

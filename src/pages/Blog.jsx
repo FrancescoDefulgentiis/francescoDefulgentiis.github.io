@@ -29,6 +29,7 @@ const Blog = () => {
                                 {post.title}
                             </h2>
                             <p className="mb-4 text-sm text-gray-500">{post.date}</p>
+                            <p className="mb-4 text-sm text-gray-500">{post.toRead} min read</p>
                             <p className="font-mono">{post.description}</p>
                         </article>
                     </Link>
