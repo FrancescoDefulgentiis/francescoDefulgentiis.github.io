@@ -1,5 +1,6 @@
 import React from 'react';
 import Education from '../components/sections/Education';
+import LatestPosts from '../components/sections/LatestPosts';
 import WorkProjects from '../components/sections/WorkProjects';
 import Certifications from '../components/sections/Certifications';
 
@@ -16,7 +17,7 @@ const Home = () => {
                 </p>
             </section>
 
-            {/* <LatestPosts /> */}
+            <LatestPosts />
             <WorkProjects />
             <Education />
             {/* <Certifications /> */}

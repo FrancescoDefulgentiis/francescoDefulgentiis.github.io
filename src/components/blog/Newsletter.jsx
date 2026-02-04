@@ -1,23 +1,22 @@
 import React, { useState } from 'react';
 
 const Newsletter = () => {
-    // Buttondown username
-    const username = 'pepe_aster';
+    const buttondown_username = 'pepe_aster';
 
     return (
         <section className="mt-16 pt-8 border-t border-dashed border-gray-400">
             <h3 className="text-xl font-bold mb-4 flex items-center">
-                <span className="text-accent-secondary mr-2 text-sm">&lt;My newsletter /&gt;</span>
+                <span className="text-accent-secondary mr-2 text-md">&lt;My Awesome Newsletter /&gt;</span>
             </h3>
             <p className="mb-6 text-sm text-gray-600 font-mono">
-                Get notified when I post something new. No spam, just updates.
+                Get notified when I post something new. No spam, just some pepe.
             </p>
 
             <form
-                action="https://buttondown.com/api/emails/embed-subscribe/pepe_aster"
+                action={`https://buttondown.email/api/emails/embed-subscribe/${buttondown_username}`}
                 method="post"
-                class="embeddable-buttondown-form"
-                referrerpolicy="unsafe-url"
+                target="popupwindow"
+                onSubmit={() => window.open(`https://buttondown.email/${buttondown_username}`, 'popupwindow')}
                 className="flex flex-col sm:flex-row gap-4 max-w-md"
             >
                 <input
@@ -35,7 +34,6 @@ const Newsletter = () => {
                     &gt; Subscribe
                 </button>
             </form>
-
         </section>
     );
 };
