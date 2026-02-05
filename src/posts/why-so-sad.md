@@ -5,7 +5,7 @@ description: "Reflecting on why raw aesthetics matters in a polished web."
 toRead: 3
 ---
 
-As I briefly mentioned in my [first post](home#/blog/hello-world), I feel like today’s internet has become an incredibly crowded place. Between aggressive advertisement spots, intrusive pop-ups, and over-engineered, flashy UIs, it all feels like a bit "much" for a personal blog.
+As I briefly mentioned in my [first post](#/blog/hello-world), I feel like today’s internet has become an incredibly crowded place. Between aggressive advertisement spots, intrusive pop-ups, and over-engineered, flashy UIs, it all feels like a bit "much" for a personal blog.
 
 I wanted to create a space that felt intentional. It's so easy to fall into the social media rabbit hole, scrolling endlessly through feeds of curated content. So, first things first: I sat down and chose a design philosophy that would help me stay true to my vision.
 
