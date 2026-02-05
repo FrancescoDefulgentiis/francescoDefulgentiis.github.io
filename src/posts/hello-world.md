@@ -19,7 +19,7 @@ To get this project off the ground, I paired my (limited) frontend experience wi
 The secret is that I actually hate it, i do live in a rowdy, colorful, quirky home; But here, here the goal is to keep things simple, raw, and content-focused. I feel like today’s internet has become an incredibly crowded place. Between aggressive advertisement spots, intrusive pop-ups, and over-engineered, flashy UIs, it all feels like a bit "much" for a personal blog. I wanted a digital corner that breathes. 
 If you're curious about the design philosophy behind this page, check out [why so Sad?](home#/blog/why-so-sad).
 
-I guess that’s it—this is the "Hello, World!" of my blogging journey.
+I guess that’s it, this is the "Hello, World!" of my blogging journey.
 
 ```javascript
 console.log("Hello, World!");

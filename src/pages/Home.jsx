@@ -26,7 +26,7 @@ const Home = () => {
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
                     <div>
                         <p className="font-mono text-gray-600 mb-4">&gt; Want to see more?</p>
-                        <a href="home#/blog" className="inline-block bg-black text-white px-4 py-2 font-bold hover:bg-accent-primary transition-colors">
+                        <a href="#/blog" className="inline-block bg-black text-white px-4 py-2 font-bold hover:bg-accent-primary transition-colors">
                             [Read the Blog]
                         </a>
                     </div>
