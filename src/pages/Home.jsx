@@ -2,7 +2,6 @@ import React from 'react';
 import Education from '../components/sections/Education';
 import LatestPosts from '../components/sections/LatestPosts';
 import WorkProjects from '../components/sections/WorkProjects';
-import Certifications from '../components/sections/Certifications';
 
 const Home = () => {
     return (
@@ -20,13 +19,12 @@ const Home = () => {
             <LatestPosts />
             <WorkProjects />
             <Education />
-            {/* <Certifications /> */}
 
             <section className="animate-in fade-in duration-1000 delay-300 border-t-2 border-black pt-8">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
                     <div>
                         <p className="font-mono text-gray-600 mb-4">&gt; Want to see more?</p>
-                        <a href="#/blog" className="inline-block bg-black text-white px-4 py-2 font-bold hover:bg-accent-primary transition-colors">
+                        <a href="#/blog" className="inline-block bg-black text-white px-4 py-2 font-bold hover:bg-accent-primary hover:text-black transition-colors">
                             [Read the Blog]
                         </a>
                     </div>
