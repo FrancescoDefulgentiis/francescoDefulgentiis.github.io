@@ -23,6 +23,6 @@ To keep myself honest as I build this site out, I have established a few immutab
 7. **Digital Vulnerability**: This is a diary, not a museum. I reserve the right to be wrong, to publish drafts, and to change my mind. The content here is a snapshot of who I was at the moment of writing, not a polished corporate statement.
 8. **Wabi-Sabi**: Embracing the imperfect. If a layout breaks slightly on a specific screen size, or if a thought is incomplete, so be it. We prioritize the soul of the message over the polish of the pixel.
 
-> "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away."
+> 'Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.'
 
 My life may be a mess, but my UI is clean.

@@ -4,7 +4,7 @@ const projects = [
     {
         title: "Currently employed at Ntt Data Italia",
         shortDesc: "Software Engineer & Consultant.",
-        details: "Building full stack solutions across a diverse technology landscape on the back-end and front-end. I collaborate directly with clients to understand their needs and deliver tailored, production-ready software."
+        details: "I design and build full-stack solutions across a diverse technology ecosystem, spanning back-end and front-end development. I collaborate directly with clients to translate their needs into tailored, production-ready software."
     },
     {
         title: "Personal Portfolio",
@@ -17,7 +17,7 @@ const projects = [
         details: `This is a work in progress project I'm building in Godot 4 with GDScript. I will soon make a dedicated post about it.`
     },
     {
-        title: "inkHub",
+        title: "InkHub",
         shortDesc: "Customizable Home Dashboard",
         details: `InkHub is a versatile hardware platform that integrates the high-contrast clarity of e-ink technology with the processing power of a Raspberry Pi. At its core, the project focuses on modular utility. Rather than functioning as a closed system, InkHub is designed to be an extensible ecosystem. By prioritizing open customizability and collaborative input, the device allows for a wide range of applications.`
     }

@@ -55,7 +55,7 @@ const BlogPost = () => {
                 </h1>
                 <div className="text-gray-500 font-mono text-sm flex gap-4">
                     <span>DATE: {post.data.date}</span>
-                    <span className="text-accent-primary">--{post.data.toRead} min read</span>
+                    <span className="text-gray-500">--{post.data.toRead} min read</span>
                 </div>
             </header>
 

@@ -14,6 +14,7 @@ export async function getPosts() {
         posts.push({
             slug,
             ...attributes,
+            body: rawContent, // Include full content for search
         });
     }
 
