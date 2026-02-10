@@ -2,7 +2,7 @@
 title: InkHub
 date: 2026-02-10
 description: And the admission that I don’t have all the answers
-toRead: 5
+toRead: 7
 ---
 There’s something uniquely satisfying about taking a raw idea and watching it evolve into a physical object that lives on your wall. One of my dearest latest projects, **InkHub**, is exactly that.
 

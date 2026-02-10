@@ -54,7 +54,7 @@ const BlogPost = () => {
                     {post.data.title}
                 </h1>
                 <div className="text-gray-500 font-mono text-sm flex gap-4">
-                    <span>DATE: {post.data.date}</span>
+                    <span>DATE: {new Date(post.data.date).toLocaleDateString()}</span>
                     <span className="text-gray-500">--{post.data.toRead} min read</span>
                 </div>
             </header>

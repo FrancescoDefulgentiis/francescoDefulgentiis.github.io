@@ -10,7 +10,7 @@ const PostCard = ({ post }) => {
                     {post.title}
                 </h2>
                 <div className="flex gap-4 mb-4 text-sm text-gray-500 font-mono">
-                    <span>{post.date}</span>
+                    <span>{new Date(post.date).toLocaleDateString()}</span>
                     <span>{post.toRead} min read</span>
                 </div>
                 <p className="font-mono">{post.description}</p>
