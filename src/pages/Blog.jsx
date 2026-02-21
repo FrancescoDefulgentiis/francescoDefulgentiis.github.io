@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 
-import Newsletter from '../components/blog/Newsletter';
+
 import PostCard from '../components/blog/PostCard';
 import SearchBar from '../components/blog/SearchBar';
 import { getPosts } from '../lib/posts';
@@ -88,7 +88,7 @@ const Blog = () => {
                 </div>
             )}
 
-            <Newsletter />
+
         </div>
     );
 };
