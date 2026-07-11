@@ -64,4 +64,4 @@ The solder might have smoked a few components along the way, but the vision for 
 
 ---
 
-_Curious about the implementation? Check out the_ [README on GitHub and see how easy it is to build your first module.](https://github.com/FrancescoDefulgentiis/inkHub)
+_Curious about the implementation? Check out the_ [Wiki on GitHub and see how easy it is to build your first module.]([Home · FrancescoDefulgentiis/inkHub Wiki](https://github.com/FrancescoDefulgentiis/inkHub/wiki))
