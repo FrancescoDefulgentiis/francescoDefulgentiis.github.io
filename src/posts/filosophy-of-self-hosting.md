@@ -1,6 +1,6 @@
 ---
 title: Filosophy of self hosting
-date: 2026-02-20
+date: 2026-11-20
 description: Why I run my own little corner of the internet, what it costs me, and the day I learned I actually need the algorithm
 toRead: 6
 ---
