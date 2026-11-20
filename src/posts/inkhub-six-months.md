@@ -2,7 +2,7 @@
 title: InkHub turns six months old (and has a mid-life crisis)
 date: 2026-08-10
 description: A first physical version, a no-code platform, and a competitor that made me question everything
-toRead: 6
+toRead: 5
 ---
 Six months ago I wrote about a display that would tell me when my bus was coming. This was supposed to be the "look how far it's come" post. It is, sort of. It's also the "I got stuck for a while" post, so let's do both.
 
